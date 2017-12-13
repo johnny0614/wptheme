@@ -1644,6 +1644,17 @@ body:not(.title-tagline-hidden) .site-branding-text {
 	position: relative;
 }
 
+.custom-header .header-search-container {
+	position: absolute;
+	width: 66.6%;
+	top: 50%;
+	left: 50%;
+	-webkit-transform: translate(-50%, -50%);
+	    -ms-transform: translate(-50%, -50%);
+					transform: translate(-50%, -50%);
+	z-index: 99;
+}
+
 .has-header-image.twentyseventeen-front-page .custom-header,
 .has-header-video.twentyseventeen-front-page .custom-header,
 .has-header-image.home.blog .custom-header,

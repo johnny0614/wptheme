@@ -49,8 +49,6 @@ get_header(); ?>
 
 			<p><?php _e( 'Sorry, but nothing matched your search terms. Please try again with some different keywords.', 'twentyseventeen' ); ?></p>
 			<?php
-				get_search_form();
-
 		endif;
 		?>
 

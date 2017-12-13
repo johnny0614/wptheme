@@ -10,12 +10,9 @@
 
 ?>
 <div class="custom-header">
-
-		<div class="custom-header-media">
-			<!-- <?php the_custom_header_markup(); ?> -->
-			
+	<div class="custom-header-media">
+		<div class="header-search-container">
+			<?php get_search_form(); ?>
 		</div>
-
-	<?php get_template_part( 'template-parts/header/site', 'branding' ); ?>
-
+	</div>
 </div><!-- .custom-header -->
