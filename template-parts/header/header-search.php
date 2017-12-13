@@ -11,8 +11,15 @@
 ?>
 <div class="custom-header">
 	<div class="custom-header-media">
-		<div class="header-search-container">
-			<?php get_search_form(); ?>
+		<?php the_custom_header_markup(); ?>
+		<?php if ( is_front_page() ) : ?>
+		<div class="header-search-container">		
+			<?php  get_search_form() ?>
 		</div>
 	</div>
+		<?php else : ?>
+	</div>
+	<?php get_template_part( 'template-parts/header/site', 'branding' ); ?>
+		<?php endif; ?>
+		
 </div><!-- .custom-header -->
